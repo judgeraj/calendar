@@ -16,15 +16,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setCells()
         labelOfMonth.text = monthArray[count]
         // Do any additional setup after loading the view.
     }
 
+    @IBOutlet weak var collectionView: UICollectionView!
     
     func setCells() {
-        let width = (collectionView.frame.size.width)/8
-        let height = (collectionView.frame.size.height)/8
+        let width = (collectionView.frame.size.width)/7
+        let height = (collectionView.frame.size.height)/7
         
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.itemSize = CGSize(width: width, height: height)
         
     }
     

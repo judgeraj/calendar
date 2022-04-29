@@ -141,6 +141,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="nnB-KY-NY0" id="UjL-rt-V0h"/>
                         <outlet property="labelOfMonth" destination="zHI-lG-5nx" id="DYh-km-oYv"/>
                     </connections>
                 </viewController>
